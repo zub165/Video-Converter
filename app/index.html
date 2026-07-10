@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/Video-Converter/app/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Convert audio and video files. Create ringtones, extract audio, compress media. Privacy-first local processing.">
+  <meta name="theme-color" content="#6C63FF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MediaConv">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>Media Converter Pro</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body { margin: 0; background: #0f0f1a; }
+    .loading {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; color: #a8b2d1;
+      font-family: system-ui, sans-serif; gap: 12px;
+    }
+    .loading h1 {
+      margin: 0; font-size: 28px; font-weight: 800;
+      background: linear-gradient(135deg, #6C63FF, #FF6584);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <h1>Media Converter</h1>
+    <p>Loading your media conversion tools…</p>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('loading');
+      if (el) el.style.display = 'none';
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

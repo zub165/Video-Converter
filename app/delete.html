@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Data - Media Converter Pro</title>
+  <meta name="description" content="Delete your Media Converter Pro data and account information.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6C63FF">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <style>
+    :root {
+      --primary: #6C63FF; --danger: #FF6B6B; --bg: #0f0f1a; --card: #16213e; --text: #fff; --muted: #a8b2d1;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f8f9fa; --card: #fff; --text: #1a1a2e; --muted: #4a4a6a; }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    main { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    h1 { color: var(--danger); margin-bottom: 8px; }
+    h2 { margin: 28px 0 12px; }
+    p, li { margin-bottom: 12px; color: var(--muted); }
+    .card { background: var(--card); padding: 24px; border-radius: 16px; border: 1px solid rgba(255,107,107,.25); }
+    nav { margin-bottom: 24px; }
+    nav a { color: var(--primary); margin-right: 16px; text-decoration: none; font-weight: 600; }
+    .steps { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Site navigation">
+      <a href="https://mediaconverter.app/">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="delete.html" aria-current="page">Delete Data</a>
+    </nav>
+    <div class="card">
+      <h1>Delete Your Data</h1>
+      <p>You can remove conversion history, reset settings, clear cache, or delete all local data.</p>
+      <h2>In the app</h2>
+      <ol class="steps">
+        <li>Open Media Converter Pro</li>
+        <li>Go to <strong>Settings → Delete data / account</strong></li>
+        <li>Choose: Delete all, Delete history, Reset settings, or Clear cache</li>
+        <li>Confirm and execute</li>
+      </ol>
+      <h2>By email</h2>
+      <p>Email <a href="mailto:privacy@mediaconverter.app?subject=Delete%20My%20Data">privacy@mediaconverter.app</a> with subject <strong>Delete My Data</strong>. We process requests within 30 days.</p>
+      <h2>What is removed</h2>
+      <ul>
+        <li>Local conversion history</li>
+        <li>Preferences and secure profile storage</li>
+        <li>Temporary cache files</li>
+        <li>Optional remote preference / account records via HTTPS delete APIs</li>
+      </ul>
+      <p>Media files you converted remain in your device storage unless you delete them manually.</p>
+    </div>
+  </main>
+</body>
+</html>
